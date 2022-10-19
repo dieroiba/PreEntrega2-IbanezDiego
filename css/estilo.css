@@ -9,7 +9,7 @@ header, nav, main, section, article, footer, aside {
     display: block;
 }
 
-/* Todo el contenido estara centrado en la pantalla sin importar el ancho de la misma*/
+/* Todo el contenido estará centrado en la pantalla sin importar el ancho de la misma*/
 body {
     text-align: center;
 }
