@@ -1,0 +1,308 @@
+/* Todos los elementos tendran 0px de margen y espacio interior*/ 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Todos los elementos se comportarán como bloques de aquí en adelante */
+header, nav, main, section, article, footer, aside {
+    display: block;
+}
+
+/* Todo el contenido estara centrado en la pantalla sin importar el ancho de la misma*/
+body {
+    text-align: center;
+}
+
+/* De esta manera todo lo que esté dentro de la "envoltura" quedará centrado en la pantalla sin importar el ancho de la misma*/
+#envoltura {
+    display: inline-block;
+    width: 80%;
+    height: auto;
+}
+
+/* Bordes interiores de los artículos*/
+article {
+    padding: auto;
+}
+
+/* Setup del espacio interior de las secciones y la barra navegación*/
+section, nav {
+    padding: 15px 10px;
+}
+
+/* Enlaces sin subrayado */
+a { text-decoration: none;
+    color: #0a0a0a;
+}
+
+a:visited {
+    color: rgb(49, 49, 49);
+}
+  a:hover, a:active, a:focus {
+    color:rgb(31, 50, 158);
+}
+
+
+/* Fondo rosa del Header*/
+header {
+    background-color: #ce9c9d;
+}
+
+/* Declaración para poner el menú en una sola línea */
+#menu li {
+    /* display: inline-block; */
+    display:inline-flex;
+    padding: 5px;
+    font: bold 14px verdana, sans-serif;
+}
+
+h1 {
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+h2 {
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* Formato para la etiqueta */
+h3 {
+    font: 20px times, serif;
+    font-style: italic;
+    font-size: 3em;
+    color: rgb(117, 117, 117);
+}
+
+/* Formato para la etiqueta */
+h2 {
+    font: 20px verdana, sans-serif;
+    color: rgb(110, 110, 110);
+    font-weight: bold;
+    text-align: center;
+}
+
+ /* Con esto quitamos las decoraciones de lista de menú (los puntitos)*/
+ul {
+    list-style: none;
+}
+
+/* Fotografías con esquinas redondeadas y sombras*/
+.img-index {
+      border-radius: 3%;
+      box-shadow: rgb(150, 150, 150) 5px 5px 5px;
+      opacity: 1;
+      transition: .5s ease;
+      backface-visibility: hidden;
+      width: 230px;
+      margin: 15px;
+}
+
+.img-default {
+    border-radius: 3%;
+      box-shadow: rgb(150, 150, 150) 5px 5px 5px;
+      width: 230px;
+      margin: 3%;
+}
+
+
+/* Declaración para poner los tres elementos article en una sola línea */
+.en-linea {
+    display: inline-block;
+    margin-inline: -1%;
+    padding: 5px 5px;
+}
+
+.logo-centrado {
+    text-align:right;
+}
+
+/* Márgenes entre las imágenes */
+article {
+    margin: 0px;
+}
+
+/* Márgenes de la barra de navegación*/
+#menu {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 18px;
+}
+
+/* Comienzo Hover u opacidad sobre las imágenes */
+.fadein figure img {
+	opacity: 1;
+	transition: .3s ease-in-out;
+}
+
+.fadein figure:hover img {
+	opacity: .5;
+}
+/* Fin del efecto Hover u opacidad sobre las imágenes */
+
+
+/*Estilo de los párrafos*/
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+
+/* Comienzo del módulo de Testimonios*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+blockquote{
+  font-size: 1.4em;
+  width:40%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #464545;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #ce9c9d ;
+  line-height:1.6;
+  position: relative;
+  background: transparent;
+}
+
+/* Con esto se pone la comilla*/
+blockquote::before{ 
+  font-family:Arial;
+  content: "\201C";
+  color:#ce9c9d;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: "";
+}
+
+/* Aquí se le da formato al nombre y apellido del autor del testimonio*/
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+/* Seteo de los botones que están debajo de las fotografías*/
+.figure-image-boton {
+    background-color: #7c7c7c;
+    border: none;
+    border-radius: 10px 10px;
+    box-shadow: rgb(150, 150, 150) 5px 5px 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    
+    
+}
+
+/* Seteo de los botones rosas de la barra de menú*/
+.nav-boton-menu {
+    background-color: #ce9c9c;
+    border: none;
+    border-radius: 10px 10px;
+    box-shadow: rgb(150, 150, 150) 5px 5px 5px;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+/* Configuración del footer*/
+#footer-contenedor {
+  display: flex ; /* Con esta declaración, las tres cajas se comportan en línea */
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+/* Fondo rosa del footer */
+footer {
+    background-color: #ce9c9c;
+}
+
+
+
+/* Formato del título de  cajas-1, 2 y 3 */
+footer div div span {
+    font: 25px bold;
+    text-align: center;
+}
+
+/* Formato de caja-1 */
+.caja {
+    flex: 1;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 10px;
+    /*border: 1px solid #555555;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px #555555;*/
+}
+
+.titulo-mapa {
+    font-size: 2em;
+}
+
+summary {
+    font-size: 1.5em;
+}
+
+/* Formato de las listas del footer */
+.footer-listado {
+    font-size: 25px;
+    text-align: left;
+    margin: 25px 5px;
+}
+
+/* Separación entre las fuentes Awesome del footer y el título de cada item de la lista*/
+i {
+    margin-right: 10px;
+}
+
+/* Comienzo de formato para artículos */
+
+#articulo-formato {
+    text-align: center;
+}
+
+/* Cursiva para subtítulo de imágenes */
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 1.5%;
+}
+/* Centrado de tabla en la pantalla */
+.wrapper-table > table {
+    display: inline-table;
+    width: 40%;
+}
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Módulo de búsqueda
+.topnav {
+    float: right
+}
