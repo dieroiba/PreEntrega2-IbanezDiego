@@ -229,6 +229,7 @@ blockquote span{
   display: flex ; /* Con esta declaración, las tres cajas se comportan en línea */
   margin: 10px 10px;
   padding: 10px 10px;
+  width: auto;
 }
 
 /* Fondo rosa del footer */
@@ -236,7 +237,21 @@ footer {
     background-color: #ce9c9c;
 }
 
-
+/*Iframe de Youtube responsive*/
+.youtube-responsive {
+    overflow:hidden;
+    padding-bottom:400px; /* Adecuar este valor para controlar la altura del video */
+    position:relative;
+    height:0;
+}
+.youtube-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/*Fin del iframe de Youtube responsive*/
 
 /* Formato del título de  cajas-1, 2 y 3 */
 footer div div span {
