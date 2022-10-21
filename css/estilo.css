@@ -104,7 +104,8 @@ ul {
 .img-default {
     border-radius: 3%;
       box-shadow: rgb(150, 150, 150) 5px 5px 5px;
-      width: 230px;
+      width: auto;
+      height: auto;
       margin: 3%;
 }
 
@@ -206,8 +207,6 @@ blockquote span{
     display: inline-block;
     font-size: 18px;
     margin: 4px 2px;
-    
-    
 }
 
 /* Seteo de los botones rosas de la barra de menú*/
