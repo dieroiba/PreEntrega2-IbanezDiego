@@ -43,6 +43,13 @@ a:visited {
     color:rgb(31, 50, 158);
 }
 
+blockquote {
+    font-style: italic;
+    color: rgb(71, 71, 71);
+    margin-top: 20px;
+    text-align: left;
+    
+}
 
 /* Fondo rosa del Header*/
 header {
@@ -90,40 +97,56 @@ ul {
     list-style: none;
 }
 
-blockquote {
+.grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    "pri-texto pri-texto"
-    "pri-img primer-test"
-    
+    "primer-test segundo-test tercer-test"
+    "foto-1 foto-2 foto-3"
+    "primer-nomb segundo-nomb tercer-nomb"
     ;
 }
 
-.primer-parrafo {
-    grid-area: pri-texto;
-}
-
-.segundo-parrafo {
-    grid-area: seg-texto;
-}
-
-.primera-img {
-    grid-area: pri-img ;
-}
-
-.segunda-img {
-    grid-area: seg-img;
-}
-
-.nomb-1 {
+.test-1 {
     grid-area: primer-test;
 }
 
-.nomb-2 {
+.test-2 {
     grid-area: segundo-test;
 }
+
+.test-3 {
+    grid-area: tercer-test;
+}
+
+.nomb-1 {
+    grid-area: primer-nomb;
+
+}
+
+.nomb-2 {
+    grid-area: segundo-nomb;
+}
+
+.nomb-3 {
+    grid-area: tercer-nomb;
+}
+
+.img-1 {
+    grid-area: foto-1;
+    align-content: center;
+}
+
+.img-2 {
+    grid-area: foto-2;
+}
+
+.img-3 {
+    grid-area: foto-3;
+}
+
 
 /* Fotografías con esquinas redondeadas y sombras*/
 .img-index {
@@ -188,45 +211,7 @@ p {
 }
 
 
-/* Comienzo del módulo de Testimonios*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
-blockquote{
-  font-size: 1.4em;
-  width:40%;
-  margin:50px auto;
-  font-family:Open Sans;
-  font-style:italic;
-  color: #464545;
-  padding:1.2em 30px 1.2em 75px;
-  border-left:8px solid #ce9c9d ;
-  line-height:1.6;
-  position: relative;
-  background: transparent;
-}
 
-/* Con esto se pone la comilla*/
-blockquote::before{ 
-  font-family:Arial;
-  content: "\201C";
-  color:#ce9c9d;
-  font-size:4em;
-  position: absolute;
-  left: 10px;
-  top:-10px;
-}
-
-blockquote::after{
-  content: "";
-}
-
-/* Aquí se le da formato al nombre y apellido del autor del testimonio*/
-blockquote span{
-  display:block;
-  color:#333333;
-  font-style: normal;
-  font-weight: bold;
-  margin-top:1em;
-}
 
 /* Seteo de los botones que están debajo de las fotografías*/
 .figure-image-boton {
