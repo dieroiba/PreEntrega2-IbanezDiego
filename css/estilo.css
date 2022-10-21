@@ -90,6 +90,41 @@ ul {
     list-style: none;
 }
 
+blockquote {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "pri-texto pri-texto"
+    "pri-img primer-test"
+    
+    ;
+}
+
+.primer-parrafo {
+    grid-area: pri-texto;
+}
+
+.segundo-parrafo {
+    grid-area: seg-texto;
+}
+
+.primera-img {
+    grid-area: pri-img ;
+}
+
+.segunda-img {
+    grid-area: seg-img;
+}
+
+.nomb-1 {
+    grid-area: primer-test;
+}
+
+.nomb-2 {
+    grid-area: segundo-test;
+}
+
 /* Fotografías con esquinas redondeadas y sombras*/
 .img-index {
       border-radius: 3%;
