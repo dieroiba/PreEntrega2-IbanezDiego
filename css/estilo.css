@@ -222,7 +222,28 @@ blockquote span{
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
+    transition: all 0.5s;
+    cursor: pointer;
 }
+
+.nav-boton-menu span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .nav-boton-menu:hover span {
+    padding-right: 25px;
+  }
+  
+  .nav-boton-menu:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+/* Fin seteo de los botones rosas de la barra de menú*/
 
 /* Configuración del footer*/
 #footer-contenedor {
