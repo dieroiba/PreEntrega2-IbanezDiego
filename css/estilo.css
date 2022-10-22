@@ -162,7 +162,7 @@ ul {
 .img-default {
     border-radius: 3%;
       box-shadow: rgb(150, 150, 150) 5px 5px 5px;
-      width: 40%;
+      width: 20%;
       margin: 3%;
 }
 
@@ -362,6 +362,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Seteo del tamaño del botón de Whatsapp */
+.whatsapp-responsive {
+    width: 20%;
+}
+
+
 /* Inicio de seteo para dispositivos móviles */
 
 @media(max-width: 500px) {
@@ -402,6 +408,15 @@ header div a img {
 blockquote {
     text-align: justify;
     margin-bottom: 20px;
+}
+
+.img-default {
+    width: 80%;
+    max-width: 320px;       
+}
+
+.whatsapp-responsive {
+    width: 90%;
 }
 
 }
