@@ -412,7 +412,12 @@ blockquote {
 
 .img-default {
     width: 80%;
-    max-width: 320px;       
+    max-width: 320px;  
+    margin-bottom: 10px;     
+}
+
+figcaption {
+    margin-bottom: 20px;
 }
 
 .whatsapp-responsive {
