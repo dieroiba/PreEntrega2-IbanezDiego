@@ -358,13 +358,50 @@ figcaption {
 * {box-sizing: border-box;}
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Inicio de seteo para dispositivos móviles */
 
+@media(max-width: 500px) {
 
-/* Módulo de búsqueda
-.topnav {
-    float: right
+header {
+    height: 150px;
+}
+
+/*Adaptación del tamaño del logo para dispositivos móviles*/
+header div a img {
+    width: 250px;
+    }
+   
+.img-index {
+        width: 250px;
+}
+
+.grid-container {
+        display:block;
+}
+
+#menu {
+    margin-left: 20px;
+}
+
+.img-1{
+    margin: 30px;
+}
+
+.img-2 {
+    margin: 30px;
+}
+
+.img-3 {
+    margin: 30px;
+}
+
+blockquote {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
 }
