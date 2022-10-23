@@ -45,11 +45,11 @@ a:visited {
 
 blockquote {
     font-style: italic;
-    color: rgb(71, 71, 71);
+    color: rgb(85, 84, 84);
     margin-top: 20px;
     text-align: left;
-    
 }
+
 
 /* Fondo rosa del Header*/
 header {
@@ -99,17 +99,11 @@ ul {
  
 /* Inicio del seteo del grid en el Index*/
 
-.grid-container {
-    display: grid;
-    gap: 10px;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "primer-test segundo-test tercer-test"
-    "foto-1 foto-2 foto-3"
-    "primer-nomb segundo-nomb tercer-nomb"
-    ;
-}
+.grid-container-index {
+        display:grid;
+        gap: 2rem; 
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    }
 
 .test-1 {
     grid-area: primer-test;
