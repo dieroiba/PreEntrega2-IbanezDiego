@@ -93,91 +93,35 @@ h2 {
     text-align: center;
 }
 
- /* Con esto quitamos las decoraciones de lista de menú (los puntitos)*/
+ /* Con esto quitamos las decoraciones de lista de menú (los puntitos) */
 ul {
     list-style: none;
 }
  
-/* Inicio del seteo del grid en el Index*/
+/* Inicio de seteo de la pagina Index para vista desktop / mobile con maquetación Grid */
 
-.grid-container-index {
-        display:grid;
-        gap: 2rem; 
-        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-    }
-
-.test-1 {
-    grid-area: primer-test;
+.grid-container {
+    display:grid;
+    gap: 2rem; 
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 }
+/* Fin de seteo de la pagina Index para vista desktop / mobile con maquetación Grid */
 
-.test-2 {
-    grid-area: segundo-test;
-}
 
-.test-3 {
-    grid-area: tercer-test;
-}
-
-.nomb-1 {
-    grid-area: primer-nomb;
-
-}
-
-.nomb-2 {
-    grid-area: segundo-nomb;
-}
-
-.nomb-3 {
-    grid-area: tercer-nomb;
-}
-
-.img-1 {
-    grid-area: foto-1;
-    align-content: center;
-}
-
-.img-2 {
-    grid-area: foto-2;
-}
-
-.img-3 {
-    grid-area: foto-3;
-}
-
-/* Fin del seteo del grid en el index*/
-
-/* Inicio del seteo del grid en Retrato*/
-
-                                /*Pagina Retrato*/
-
-        /*Inicio de seteo de la pagina Retratos con grid para vista desktop*/
- .grid-container-2 {
+/* Inicio de seteo de la pagina Retratos para vista desktop / mobile con maquetación Grid */
+.grid-container-2 {
             display:grid;
             gap: 2rem; 
-            grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         }
         
 .img-retrato {
             width: 90%;
         }
-        
-                /*Fin de seteo de la pagina Retratos con grid para vista desktop*/
-        
-                
-                /*Inicio de seteo de la pagina Retratos con grid para vista movil*/
-        
-@media(max-width: 500px) {
-        
-.grid-container-2 {
-    display:grid;
-    gap: 2rem; 
-    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-    }
-}
-        
-                /*Fin de seteo del grid para la pagina de Retratos vista movil*/
+/* Fin de seteo de la pagina Retratos para vista desktop / mobile con Grid */
 
-/* Fotografías con esquinas redondeadas y sombras*/
+
+/* Inicio de esquinas redondeadas y sombras de img en el Index*/
 .img-index {
       border-radius: 3%;
       box-shadow: rgb(150, 150, 150) 5px 5px 5px;
@@ -194,6 +138,7 @@ ul {
       width: 40%;
       margin: 1%;
 }
+/* Fin de esquinas redondeadas y sombras de img en el Index */
 
 
 /* Declaración para poner los tres elementos article en una sola línea */
