@@ -96,6 +96,8 @@ h2 {
 ul {
     list-style: none;
 }
+ 
+/* Inicio del seteo del grid en el index*/
 
 .grid-container {
     display: grid;
@@ -147,6 +149,7 @@ ul {
     grid-area: foto-3;
 }
 
+/* Fin del seteo del grid en el index*/
 
 /* Fotografías con esquinas redondeadas y sombras*/
 .img-index {
