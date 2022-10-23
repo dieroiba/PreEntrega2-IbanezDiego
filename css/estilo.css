@@ -64,6 +64,8 @@ header {
     font: bold 14px verdana, sans-serif;
 }
 
+
+/* Inicio de seteo de Etiquetas */
 h1 {
     text-align: justify;
     margin-top: 2%;
@@ -71,12 +73,14 @@ h1 {
 }
 
 h2 {
-    text-align: justify;
+    font: 20px verdana, sans-serif;
+    color: rgb(110, 110, 110);
+    font-weight: bold;
+    text-align: center;
     margin-top: 2%;
     margin-bottom: 7%;
 }
 
-/* Formato para la etiqueta */
 h3 {
     font: 20px times, serif;
     font-style: italic;
@@ -84,20 +88,15 @@ h3 {
     color: rgb(117, 117, 117);
     margin: 20px;
 }
+/* Fin de seteo de Etiquetas */
 
-/* Formato para la etiqueta */
-h2 {
-    font: 20px verdana, sans-serif;
-    color: rgb(110, 110, 110);
-    font-weight: bold;
-    text-align: center;
-}
 
  /* Con esto quitamos las decoraciones de lista de menú (los puntitos) */
 ul {
     list-style: none;
 }
  
+
 /* Inicio de seteo de la pagina Index para vista desktop / mobile con maquetación Grid */
 
 .grid-container {
@@ -121,7 +120,7 @@ ul {
 /* Fin de seteo de la pagina Retratos para vista desktop / mobile con Grid */
 
 
-/* Inicio de esquinas redondeadas y sombras de img en el Index*/
+/* Inicio de esquinas redondeadas y sombras de las img en el Index*/
 .img-index {
       border-radius: 3%;
       box-shadow: rgb(150, 150, 150) 5px 5px 5px;
@@ -129,7 +128,6 @@ ul {
       transition: .5s ease;
       backface-visibility: hidden;
       width: 230px;
-      margin: 15px;
 }
 
 .img-default {
@@ -138,38 +136,16 @@ ul {
       width: 40%;
       margin: 1%;
 }
-/* Fin de esquinas redondeadas y sombras de img en el Index */
+/* Fin de esquinas redondeadas y sombras de las img en el Index */
 
 
-/* Declaración para poner los tres elementos article en una sola línea */
+/* Declaración para poner los tres elementos article del Index en una sola línea */
 .en-linea {
     display: inline-block;
-    margin-inline: -1%;
     padding: 5px 5px;
+    margin: 10px;
 }
 
-.logo-centrado {
-    text-align:right;
-}
-
-/* Márgenes entre las imágenes */
-article {
-    margin: 0px;
-}
-
-/* Márgenes de la barra de navegación*/
-#menu {
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 18px;
-}
-
-/* Comienzo Hover u opacidad sobre las imágenes */
-.fadein figure img {
-	opacity: 1;
-    margin:25px;
-	transition: .3s ease-in-out;
-}
 
 .fadein figure:hover img {
 	opacity: .5;
@@ -199,6 +175,7 @@ p {
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
+    margin-top: 30px;
 }
 
 /* Inicio transformacion / transición de botones azules que están en el Index*/
