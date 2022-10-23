@@ -97,7 +97,7 @@ ul {
     list-style: none;
 }
  
-/* Inicio del seteo del grid en el index*/
+/* Inicio del seteo del grid en el Index*/
 
 .grid-container {
     display: grid;
@@ -150,6 +150,10 @@ ul {
 }
 
 /* Fin del seteo del grid en el index*/
+
+/* Inicio del seteo del grid en Retrato*/
+
+
 
 /* Fotografías con esquinas redondeadas y sombras*/
 .img-index {
