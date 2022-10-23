@@ -82,6 +82,7 @@ h3 {
     font-style: italic;
     font-size: 3em;
     color: rgb(117, 117, 117);
+    margin: 20px;
 }
 
 /* Formato para la etiqueta */
@@ -227,6 +228,7 @@ article {
 /* Comienzo Hover u opacidad sobre las imágenes */
 .fadein figure img {
 	opacity: 1;
+    margin:25px;
 	transition: .3s ease-in-out;
 }
 
@@ -249,18 +251,47 @@ p {
 
 /* Seteo de los botones que están debajo de las fotografías*/
 .figure-image-boton {
-    background-color: #7c7c7c;
+    background-color: #5770fa;
     border: none;
-    border-radius: 10px 10px;
-    box-shadow: rgb(150, 150, 150) 5px 5px 5px;
+    border-radius: 25px 10px;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    margin: 4px 2px;
 }
+
+/* Inicio transformacion / transición de botones azules que están en el Index*/
+.sombra-grow {
+    box-shadow: rgb(150, 150, 150) 5px 5px 5px;
+    transform: translateZ(0);
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.sombra-grow:hover,
+.sombra-grow:focus,
+.sombra-grow:active {
+    transform: scale(1.2);
+}
+/* Fin transformacion / transición de botones azules que están en el Index*/
+
+
+/* Inicio transformacion / transición de las imagenes que están en el Index*/
+.sombra-grow-img {
+    transform: translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.sombra-grow-img:hover,
+.sombra-grow-img:focus,
+.sombra-grow-img:active {
+    transform: scale(1.1);
+}
+/* Fin transformacion/ transición de las imagenes que están en el Index*/
+
 
 /* Seteo de los botones rosas de la barra de menú*/
 .nav-boton-menu {
