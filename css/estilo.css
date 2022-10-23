@@ -174,11 +174,11 @@ ul {
 @media(max-width: 500px) {
         
 .grid-container-2 {
-            display:grid;
-            gap: 2rem; 
-            grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-            }
-        }
+    display:grid;
+    gap: 2rem; 
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    }
+}
         
                 /*Fin de seteo del grid para la pagina de Retratos vista movil*/
 
@@ -196,8 +196,8 @@ ul {
 .img-default {
     border-radius: 3%;
       box-shadow: rgb(150, 150, 150) 5px 5px 5px;
-      width: 20%;
-      margin: 3%;
+      width: 40%;
+      margin: 1%;
 }
 
 
