@@ -153,7 +153,34 @@ ul {
 
 /* Inicio del seteo del grid en Retrato*/
 
+                                /*Pagina Retrato*/
 
+        /*Inicio de seteo de la pagina Retratos con grid para vista desktop*/
+ .grid-container-2 {
+            display:grid;
+            gap: 2rem; 
+            grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+        }
+        
+.img-retrato {
+            width: 90%;
+        }
+        
+                /*Fin de seteo de la pagina Retratos con grid para vista desktop*/
+        
+                
+                /*Inicio de seteo de la pagina Retratos con grid para vista movil*/
+        
+@media(max-width: 500px) {
+        
+.grid-container-2 {
+            display:grid;
+            gap: 2rem; 
+            grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+            }
+        }
+        
+                /*Fin de seteo del grid para la pagina de Retratos vista movil*/
 
 /* Fotografías con esquinas redondeadas y sombras*/
 .img-index {
