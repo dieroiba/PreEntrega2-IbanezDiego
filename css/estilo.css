@@ -300,7 +300,7 @@ footer {
 }
 /*Fin del iframe de Youtube responsive*/
 
-/* Bot+on de Whatsapp animado*/
+/* Inicio de Boton de Whatsapp animado*/
 
 .whats-boton:hover{
     animation: shake 0.5s;
@@ -321,6 +321,7 @@ footer {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+/* Fin de Boton de Whatsapp animado*/
 
 /* Formato del título de  cajas-1, 2 y 3 */
 footer div div span {
