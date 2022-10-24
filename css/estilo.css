@@ -5,9 +5,9 @@
 }
 
 /* Todos los elementos se comportarán como bloques de aquí en adelante */
-header, nav, main, section, article, footer, aside {
+/* header, nav, main, section, article, footer, aside {
     display: block;
-}
+} */
 
 /* Todo el contenido estará centrado en la pantalla sin importar el ancho de la misma*/
 body {
@@ -146,11 +146,10 @@ ul {
     margin: 10px;
 }
 
-
+/* Efecto Hover u opacidad sobre las imágenes del Index*/
 .fadein figure:hover img {
 	opacity: .5;
 }
-/* Fin del efecto Hover u opacidad sobre las imágenes */
 
 
 /*Estilo de los párrafos*/
@@ -252,6 +251,7 @@ p {
   }
 /* Fin seteo de los botones rosas de la barra de menú*/
 
+
 /* Configuración del footer*/
 #footer-contenedor {
   display:flex;
@@ -260,12 +260,9 @@ p {
   padding: 10px 10px;
   width: auto;
   flex-wrap: wrap;
+  background-color: #ce9c9c;
 }
 
-/* Fondo rosa del footer */
-footer {
-    background-color: #ce9c9c;
-}
 
 /*Iframe de Youtube responsive*/
 .youtube-responsive {
@@ -306,23 +303,10 @@ footer {
 
 /* Fin de Boton de Whatsapp animado*/
 
-/* Formato del título de  cajas-1, 2 y 3 */
-footer div div span {
-    font: 25px bold;
-    text-align: center;
-}
-
-.titulo-mapa {
-    font-size: 2em;
-}
-
-summary {
-    font-size: 1.5em;
-}
 
 /* Formato de las listas del footer */
 .footer-listado {
-    font-size: 25px;
+    font-size: 14px;
     text-align: left;
     margin: 25px 5px;
 }
@@ -345,7 +329,8 @@ figcaption {
     margin-bottom: 1.5%;
     margin-top: 3%;
 }
-/* Centrado de tabla en la pantalla */
+
+/* Centrado de tabla en la pantalla de Reserva-Turno*/
 .wrapper-table > table {
     display: inline-table;
     width: 40%;
